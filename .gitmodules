@@ -1,0 +1,3 @@
+[submodule "RecipeAPI/RecipeAPI"]
+	path = RecipeAPI/RecipeAPI
+	url = https://github.com/firozansar/RecipeAPI.git

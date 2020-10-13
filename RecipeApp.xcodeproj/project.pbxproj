@@ -81,6 +81,7 @@
 		074E162D2535F1B300DA8B41 = {
 			isa = PBXGroup;
 			children = (
+				074E16722535F36600DA8B41 /* RecipeAPI */,
 				074E16382535F1B300DA8B41 /* RecipeApp */,
 				074E16522535F1B700DA8B41 /* RecipeAppTests */,
 				074E165D2535F1B700DA8B41 /* RecipeAppUITests */,
@@ -129,6 +130,13 @@
 				074E16602535F1B700DA8B41 /* Info.plist */,
 			);
 			path = RecipeAppUITests;
+			sourceTree = "<group>";
+		};
+		074E16722535F36600DA8B41 /* RecipeAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RecipeAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,7 +446,7 @@
 		074E16642535F1B700DA8B41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8H89UW35RQ;
@@ -457,7 +465,7 @@
 		074E16652535F1B700DA8B41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8H89UW35RQ;
