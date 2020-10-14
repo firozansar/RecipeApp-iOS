@@ -22,6 +22,9 @@
 		074E16B4253736F700DA8B41 /* RecipeImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16B3253736F700DA8B41 /* RecipeImageLoader.swift */; };
 		074E16B82537375500DA8B41 /* RemoteRecipeImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16B72537375500DA8B41 /* RemoteRecipeImageLoader.swift */; };
 		074E16BC253737C700DA8B41 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16BB253737C700DA8B41 /* Constant.swift */; };
+		074E16C025373BD600DA8B41 /* RecipeUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16BF25373BD600DA8B41 /* RecipeUIComposer.swift */; };
+		074E16C425373C6900DA8B41 /* AFHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16C325373C6900DA8B41 /* AFHTTPClient.swift */; };
+		074E16C825373D7C00DA8B41 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16C725373D7C00DA8B41 /* RecipeViewModel.swift */; };
 		142C6ABDD14FBBDD2360B812 /* Pods_RecipeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B19716BC949838D7C82D2F0 /* Pods_RecipeAppTests.framework */; };
 		8B978838230DCDF734616D95 /* Pods_RecipeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A394BA03AE367955DA75DD /* Pods_RecipeApp.framework */; };
 		AE8D22F2E553CA6C7D759DFF /* Pods_RecipeApp_RecipeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B80F41656CCD6091437FB57 /* Pods_RecipeApp_RecipeAppUITests.framework */; };
@@ -94,6 +97,9 @@
 		074E16B3253736F700DA8B41 /* RecipeImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeImageLoader.swift; sourceTree = "<group>"; };
 		074E16B72537375500DA8B41 /* RemoteRecipeImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRecipeImageLoader.swift; sourceTree = "<group>"; };
 		074E16BB253737C700DA8B41 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		074E16BF25373BD600DA8B41 /* RecipeUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeUIComposer.swift; sourceTree = "<group>"; };
+		074E16C325373C6900DA8B41 /* AFHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFHTTPClient.swift; sourceTree = "<group>"; };
+		074E16C725373D7C00DA8B41 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 		74B89C0F62FE064E8552E464 /* Pods-RecipeApp-RecipeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeApp-RecipeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-RecipeApp-RecipeAppUITests/Pods-RecipeApp-RecipeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		777C446BAD746F983B9109B4 /* Pods-RecipeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RecipeAppTests/Pods-RecipeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B80F41656CCD6091437FB57 /* Pods_RecipeApp_RecipeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipeApp_RecipeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +177,9 @@
 				074E16B3253736F700DA8B41 /* RecipeImageLoader.swift */,
 				074E16B72537375500DA8B41 /* RemoteRecipeImageLoader.swift */,
 				074E16BB253737C700DA8B41 /* Constant.swift */,
+				074E16BF25373BD600DA8B41 /* RecipeUIComposer.swift */,
+				074E16C325373C6900DA8B41 /* AFHTTPClient.swift */,
+				074E16C725373D7C00DA8B41 /* RecipeViewModel.swift */,
 			);
 			path = RecipeApp;
 			sourceTree = "<group>";
@@ -495,11 +504,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				074E16C025373BD600DA8B41 /* RecipeUIComposer.swift in Sources */,
+				074E16C425373C6900DA8B41 /* AFHTTPClient.swift in Sources */,
 				074E16B02537271300DA8B41 /* RecipeViewCell.swift in Sources */,
 				074E16B82537375500DA8B41 /* RemoteRecipeImageLoader.swift in Sources */,
 				074E163A2535F1B300DA8B41 /* AppDelegate.swift in Sources */,
 				074E16BC253737C700DA8B41 /* Constant.swift in Sources */,
 				074E16B4253736F700DA8B41 /* RecipeImageLoader.swift in Sources */,
+				074E16C825373D7C00DA8B41 /* RecipeViewModel.swift in Sources */,
 				074E163C2535F1B300DA8B41 /* SceneDelegate.swift in Sources */,
 				074E16AC253723D100DA8B41 /* RecipeCollectionViewController.swift in Sources */,
 				074E16442535F1B300DA8B41 /* RecipeApp.xcdatamodeld in Sources */,

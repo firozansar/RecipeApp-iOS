@@ -6,11 +6,24 @@
 //
 
 import UIKit
+import RecipeAPI
 
 private let reuseIdentifier = "Cell"
 
 class RecipeCollectionViewController: UICollectionViewController {
 
+    private var viewModel: RecipeViewModel?
+    private var imageLoader: RecipeImageLoader?
+    private var recipeList = RecipeList()
+
+    public convenience init(viewModel: RecipeViewModel, imageLoader: RecipeImageLoader) {
+        self.init()
+        self.viewModel = viewModel
+        self.imageLoader = imageLoader
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
