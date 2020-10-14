@@ -8,20 +8,20 @@
 import UIKit
 import RecipeAPI
 
-private let reuseIdentifier = "Cell"
+
 
 class RecipeCollectionViewController: UICollectionViewController {
 
     private var viewModel: RecipeViewModel?
     private var imageLoader: RecipeImageLoader?
     private var recipeList = RecipeList()
+    private let reuseIdentifier = "RecipeViewCell"
 
     public convenience init(viewModel: RecipeViewModel, imageLoader: RecipeImageLoader) {
         self.init()
         self.viewModel = viewModel
         self.imageLoader = imageLoader
     }
-    
     
     
     override func viewDidLoad() {
@@ -33,7 +33,16 @@ class RecipeCollectionViewController: UICollectionViewController {
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
-        // Do any additional setup after loading the view.
+        viewModel?.loadRecipes()
+        viewModel?.onLoadSuccess = strongify(weak: self.collectionView) { strongCollectionView in
+            strongCollectionView.reloadData()
+        }
+        viewModel?.onLoadFailure = strongify(weak: self) { strongSelf in
+            guaranteeMainThread {
+                strongSelf.showBasicAlert(title: Constant.Text.alertTitle, message: Constant.Text.alertMessage)
+            }
+        }
+        
     }
 
     /*

@@ -20,7 +20,7 @@ public class RecipeViewModel {
         self.recipeLoader = recipeLoader
     }
 
-    func loadCakes() {
+    func loadRecipes() {
         recipeLoader.load(completion: strongify(weak: self, closure: { strongSelf, result in
             switch result {
             case let .success(recipeList):
