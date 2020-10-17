@@ -15,10 +15,10 @@ public final class RecipeUIComposer {
         let client = AFHTTPClient()
         let recipeLoader = RemoteRecipeLoader(url: url, client: client)
         let imageLoader = RemoteRecipeImageLoader()
-        return listComposedWith(recipeLoader: recipeLoader, imageLoader: imageLoader)
+        return collectionComposedWith(recipeLoader: recipeLoader, imageLoader: imageLoader)
     }
 
-    static func listComposedWith(recipeLoader: RecipeLoader, imageLoader: RecipeImageLoader) -> RecipeCollectionViewController {
+    static func collectionComposedWith(recipeLoader: RecipeLoader, imageLoader: RecipeImageLoader) -> RecipeCollectionViewController {
         let recipeViewModel = RecipeViewModel(recipeLoader: recipeLoader)
         let recipeListViewController = RecipeCollectionViewController(viewModel: recipeViewModel, imageLoader: imageLoader)
         return recipeListViewController

@@ -27,6 +27,7 @@
 		074E16C825373D7C00DA8B41 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16C725373D7C00DA8B41 /* RecipeViewModel.swift */; };
 		074E16CC25374D5200DA8B41 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16CB25374D5200DA8B41 /* HelperFunctions.swift */; };
 		074E16D025374E2C00DA8B41 /* UICollectionViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16CF25374E2B00DA8B41 /* UICollectionViewController+Alert.swift */; };
+		074E16D42537885A00DA8B41 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16D32537885A00DA8B41 /* URL+Extension.swift */; };
 		142C6ABDD14FBBDD2360B812 /* Pods_RecipeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B19716BC949838D7C82D2F0 /* Pods_RecipeAppTests.framework */; };
 		8B978838230DCDF734616D95 /* Pods_RecipeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A394BA03AE367955DA75DD /* Pods_RecipeApp.framework */; };
 		AE8D22F2E553CA6C7D759DFF /* Pods_RecipeApp_RecipeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B80F41656CCD6091437FB57 /* Pods_RecipeApp_RecipeAppUITests.framework */; };
@@ -104,6 +105,7 @@
 		074E16C725373D7C00DA8B41 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 		074E16CB25374D5200DA8B41 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 		074E16CF25374E2B00DA8B41 /* UICollectionViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewController+Alert.swift"; sourceTree = "<group>"; };
+		074E16D32537885A00DA8B41 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		74B89C0F62FE064E8552E464 /* Pods-RecipeApp-RecipeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeApp-RecipeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-RecipeApp-RecipeAppUITests/Pods-RecipeApp-RecipeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		777C446BAD746F983B9109B4 /* Pods-RecipeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RecipeAppTests/Pods-RecipeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B80F41656CCD6091437FB57 /* Pods_RecipeApp_RecipeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipeApp_RecipeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +188,7 @@
 				074E16C725373D7C00DA8B41 /* RecipeViewModel.swift */,
 				074E16CB25374D5200DA8B41 /* HelperFunctions.swift */,
 				074E16CF25374E2B00DA8B41 /* UICollectionViewController+Alert.swift */,
+				074E16D32537885A00DA8B41 /* URL+Extension.swift */,
 			);
 			path = RecipeApp;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				074E16B02537271300DA8B41 /* RecipeViewCell.swift in Sources */,
 				074E16B82537375500DA8B41 /* RemoteRecipeImageLoader.swift in Sources */,
 				074E163A2535F1B300DA8B41 /* AppDelegate.swift in Sources */,
+				074E16D42537885A00DA8B41 /* URL+Extension.swift in Sources */,
 				074E16CC25374D5200DA8B41 /* HelperFunctions.swift in Sources */,
 				074E16BC253737C700DA8B41 /* Constant.swift in Sources */,
 				074E16B4253736F700DA8B41 /* RecipeImageLoader.swift in Sources */,
