@@ -9,7 +9,6 @@ import UIKit
 import RecipeAPI
 
 
-
 class RecipeCollectionViewController: UICollectionViewController {
 
     private var viewModel: RecipeViewModel?
@@ -17,6 +16,7 @@ class RecipeCollectionViewController: UICollectionViewController {
     private var recipeList = RecipeList()
     private let reuseIdentifier = "RecipeViewCell"
 
+    
     public convenience init(viewModel: RecipeViewModel, imageLoader: RecipeImageLoader) {
         self.init()
         self.viewModel = viewModel
@@ -27,14 +27,13 @@ class RecipeCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
+        let layout = UICollectionViewFlowLayout()
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         viewModel?.loadRecipes()
-        viewModel?.onLoadSuccess = strongify(weak: self.collectionView) { strongCollectionView in
+        viewModel?.onLoadSuccess = strongify(weak: collectionView) { strongCollectionView in
             strongCollectionView.reloadData()
         }
         viewModel?.onLoadFailure = strongify(weak: self) { strongSelf in

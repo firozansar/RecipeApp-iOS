@@ -11,24 +11,28 @@ import RecipeAPI
 class RecipeViewCell: UICollectionViewCell {
     
     
-    @IBOutlet weak var containerView: UIView!
+//    @IBOutlet weak var containerView: UIView!
+//
+//    @IBOutlet weak var imageView: UIImageView!
+//
+//    @IBOutlet weak var captionLabel: UILabel!
     
-    @IBOutlet weak var imageView: UIImageView!
     
-    @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var RecipeImage: UIImageView!
     
+    @IBOutlet weak var RecipeLabel: UILabel!
     
     override func awakeFromNib() {
       super.awakeFromNib()
-      containerView.layer.cornerRadius = 6
-      containerView.layer.masksToBounds = true
+      //containerView.layer.cornerRadius = 6
+      //containerView.layer.masksToBounds = true
     }
     
     var recipe: Recipe? {
       didSet {
         if let recipe = recipe {
 //            imageView.image = UIImage(recipe.imageURL)
-            captionLabel.text = recipe.name
+            RecipeLabel.text = recipe.name
         }
       }
     }
