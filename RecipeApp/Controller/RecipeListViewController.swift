@@ -11,6 +11,7 @@ import RecipeAPI
 class RecipeListViewController: UIViewController {
     private(set) var collectionView: UICollectionView!
     let adapter = Adapter<Recipe, RecipeCell>()
+    let imageLoader = RemoteRecipeImageLoader()
     private let emptyView = EmptyView(text: "No recipes found!")
 
     // MARK: - Life Cycle
@@ -34,7 +35,7 @@ class RecipeListViewController: UIViewController {
       collectionView.alwaysBounceVertical = true
 
       adapter.configure = { recipe, cell in
-        //cell.imageView.setImage(url: recipe.imageUrl, placeholder: UIImage(named: "recipePlaceholder"))
+        cell.imageView.setImage(remoteRecipeImageLoader: self.imageLoader, url: URL(safeString: recipe.imageURL))
         cell.label.text = recipe.name
       }
 

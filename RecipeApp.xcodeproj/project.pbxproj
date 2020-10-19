@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0705FC99253E21010024E275 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705FC98253E21010024E275 /* UIImageView+Extensions.swift */; };
 		074E163A2535F1B300DA8B41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16392535F1B300DA8B41 /* AppDelegate.swift */; };
 		074E163C2535F1B300DA8B41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E163B2535F1B300DA8B41 /* SceneDelegate.swift */; };
 		074E16412535F1B300DA8B41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074E163F2535F1B300DA8B41 /* Main.storyboard */; };
@@ -95,6 +96,7 @@
 
 /* Begin PBXFileReference section */
 		03A394BA03AE367955DA75DD /* Pods_RecipeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0705FC98253E21010024E275 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		074E16362535F1B300DA8B41 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		074E16392535F1B300DA8B41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		074E163B2535F1B300DA8B41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 				07963F70253D6DF3002E4CD5 /* UIView+Extensions.swift */,
 				07963F7C253D84B4002E4CD5 /* UIColor+Extensions.swift */,
 				07963F93253D8D2F002E4CD5 /* UICollectionView+Extensions.swift */,
+				0705FC98253E21010024E275 /* UIImageView+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -598,6 +601,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0705FC99253E21010024E275 /* UIImageView+Extensions.swift in Sources */,
 				074E16C025373BD600DA8B41 /* RecipeUIComposer.swift in Sources */,
 				074E16C425373C6900DA8B41 /* AFHTTPClient.swift in Sources */,
 				07963F4F253CABF9002E4CD5 /* HomeViewController.swift in Sources */,

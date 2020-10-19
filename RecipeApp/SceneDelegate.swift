@@ -10,7 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    let appFlowController = AppFlowController()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
@@ -18,11 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
 
-        let endpointURL = URL(safeString: Constant.endpoint)
-        let recipeCollectionViewController = RecipeUIComposer.composeRecipeCollectionViewControllerWith(loaderURL: endpointURL)
-
-        window?.rootViewController = recipeCollectionViewController
+        window?.rootViewController = appFlowController
         window?.makeKeyAndVisible()
+
+        appFlowController.start()
+
     }
 
 }
