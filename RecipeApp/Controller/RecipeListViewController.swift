@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RecipeAPI
 
 class RecipeListViewController: UIViewController {
     private(set) var collectionView: UICollectionView!
@@ -33,8 +34,8 @@ class RecipeListViewController: UIViewController {
       collectionView.alwaysBounceVertical = true
 
       adapter.configure = { recipe, cell in
-        cell.imageView.setImage(url: recipe.imageUrl, placeholder: R.image.recipePlaceholder())
-        cell.label.text = recipe.title
+        //cell.imageView.setImage(url: recipe.imageUrl, placeholder: UIImage(named: "recipePlaceholder"))
+        cell.label.text = recipe.name
       }
 
       view.addSubview(collectionView)

@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import RecipeAPI
 
 /// Manage list and detail screens for recipe
 final class RecipeFlowController: UINavigationController {
   /// Start the flow
   func start() {
-    let service = RecipesService(networking: NetworkService())
-    let controller = HomeViewController(recipesService: service)
+    let recipeLoader = RemoteRecipeLoader(url: URL(safeString: Constant.endpoint), client: AFHTTPClient())
+    let controller = HomeViewController(recipeLoader: recipeLoader)
     viewControllers = [controller]
     controller.select = { [weak self] recipe in
       self?.startDetail(recipe: recipe)
@@ -20,10 +21,9 @@ final class RecipeFlowController: UINavigationController {
   }
 
   private func startDetail(recipe: Recipe) {
-    let service = RecipesService(networking: NetworkService())
-    let controller = RecipeDetailViewController(recipe: recipe, recipesService: service)
-
-    pushViewController(controller, animated: true)
+    //let recipeLoader = RemoteRecipeLoader(url: URL(safeString: Constant.endpoint), client: AFHTTPClient())
+    //let controller = RecipeDetailViewController(recipe: recipe, recipeLoader: recipeLoader)
+    //pushViewController(controller, animated: true)
   }
 
   

@@ -7,7 +7,6 @@
 
 import UIKit
 
-import UIKit
 
 /// Manage app flow
 final class AppFlowController: UIViewController {

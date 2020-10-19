@@ -74,16 +74,16 @@ final class SearchComponent: NSObject, UISearchResultsUpdating, UISearchBarDeleg
   private func search(query: String) {
     task?.cancel()
     loadingIndicator.startAnimating()
-    task = recipeLoader.search(query: query, completion: { [weak self] recipes in
-      self?.loadingIndicator.stopAnimating()
-      self?.recipeListViewController.handle(recipes: recipes)
-    })
+//    task = recipeLoader.search(query: query, completion: { [weak self] recipes in
+//      self?.loadingIndicator.stopAnimating()
+//      self?.recipeListViewController.handle(recipes: recipes)
+//    })
   }
 
   // MARK: - Make
 
   private func makeLoadingIndicator() -> UIActivityIndicatorView {
-    let view = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+    let view = UIActivityIndicatorView(style: .whiteLarge)
     view.color = .darkGray
     view.hidesWhenStopped = true
     return view

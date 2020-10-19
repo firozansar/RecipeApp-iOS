@@ -14,15 +14,15 @@ class HomeViewController: UIViewController {
     var select: ((Recipe) -> Void)?
 
     private var refreshControl = UIRefreshControl()
-    private let recipesLoader: RecipeLoader
+    private let recipeLoader: RemoteRecipeLoader
     private let searchComponent: SearchComponent
     private let recipeListViewController = RecipeListViewController()
 
     // MARK: - Init
 
-    required init(recipeLoader: RecipeLoader) {
-      self.recipesLoader = recipesLoader
-      self.searchComponent = SearchComponent(recipesLoader: recipesLoader)
+    required init(recipeLoader: RemoteRecipeLoader) {
+      self.recipeLoader = recipeLoader
+      self.searchComponent = SearchComponent(recipeLoader: recipeLoader)
       super.init(nibName: nil, bundle: nil)
       self.title = "Recipes"
     }
@@ -65,10 +65,10 @@ class HomeViewController: UIViewController {
 
     private func loadData() {
       refreshControl.beginRefreshing()
-      recipesService.fetchTopRating(completion: { [weak self] recipes in
-        self?.recipeListViewController.handle(recipes: recipes)
-        self?.refreshControl.endRefreshing()
-      })
+//      recipesService.fetchTopRating(completion: { [weak self] recipes in
+//        self?.recipeListViewController.handle(recipes: recipes)
+//        self?.refreshControl.endRefreshing()
+//      })
     }
 
 }

@@ -34,6 +34,15 @@
 		07963F4B253CABAD002E4CD5 /* SearchComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07963F4A253CABAD002E4CD5 /* SearchComponent.swift */; };
 		07963F4F253CABF9002E4CD5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07963F4E253CABF9002E4CD5 /* HomeViewController.swift */; };
 		07963F53253D5CF1002E4CD5 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07963F52253D5CF1002E4CD5 /* Debouncer.swift */; };
+		07963F64253D6614002E4CD5 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07963F63253D6614002E4CD5 /* Adapter.swift */; };
+		07963F69253D6C69002E4CD5 /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07963F68253D6C69002E4CD5 /* NSLayoutConstraint.swift */; };
+		07963F6D253D6DA6002E4CD5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07963F6C253D6DA6002E4CD5 /* UIViewController+Extension.swift */; };
+		07963F71253D6DF3002E4CD5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07963F70253D6DF3002E4CD5 /* UIView+Extensions.swift */; };
+		07963F75253D7EBB002E4CD5 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07963F74253D7EBB002E4CD5 /* EmptyView.swift */; };
+		07963F79253D802C002E4CD5 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07963F78253D802C002E4CD5 /* RecipeCell.swift */; };
+		07963F7D253D84B4002E4CD5 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07963F7C253D84B4002E4CD5 /* UIColor+Extensions.swift */; };
+		07963F90253D86E6002E4CD5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07963F8F253D86E6002E4CD5 /* Color.swift */; };
+		07963F94253D8D2F002E4CD5 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07963F93253D8D2F002E4CD5 /* UICollectionView+Extensions.swift */; };
 		142C6ABDD14FBBDD2360B812 /* Pods_RecipeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B19716BC949838D7C82D2F0 /* Pods_RecipeAppTests.framework */; };
 		8B978838230DCDF734616D95 /* Pods_RecipeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A394BA03AE367955DA75DD /* Pods_RecipeApp.framework */; };
 		AE8D22F2E553CA6C7D759DFF /* Pods_RecipeApp_RecipeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B80F41656CCD6091437FB57 /* Pods_RecipeApp_RecipeAppUITests.framework */; };
@@ -118,6 +127,15 @@
 		07963F4A253CABAD002E4CD5 /* SearchComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchComponent.swift; sourceTree = "<group>"; };
 		07963F4E253CABF9002E4CD5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		07963F52253D5CF1002E4CD5 /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		07963F63253D6614002E4CD5 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		07963F68253D6C69002E4CD5 /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
+		07963F6C253D6DA6002E4CD5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		07963F70253D6DF3002E4CD5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		07963F74253D7EBB002E4CD5 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		07963F78253D802C002E4CD5 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		07963F7C253D84B4002E4CD5 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		07963F8F253D86E6002E4CD5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		07963F93253D8D2F002E4CD5 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		74B89C0F62FE064E8552E464 /* Pods-RecipeApp-RecipeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeApp-RecipeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-RecipeApp-RecipeAppUITests/Pods-RecipeApp-RecipeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		777C446BAD746F983B9109B4 /* Pods-RecipeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RecipeAppTests/Pods-RecipeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B80F41656CCD6091437FB57 /* Pods_RecipeApp_RecipeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipeApp_RecipeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +201,7 @@
 		074E16382535F1B300DA8B41 /* RecipeApp */ = {
 			isa = PBXGroup;
 			children = (
+				07963F67253D6BDA002E4CD5 /* Extension */,
 				07963F62253D6233002E4CD5 /* View */,
 				07963F61253D61FA002E4CD5 /* Utils */,
 				07963F60253D6144002E4CD5 /* Network */,
@@ -196,8 +215,6 @@
 				074E16422535F1B300DA8B41 /* RecipeApp.xcdatamodeld */,
 				074E16BF25373BD600DA8B41 /* RecipeUIComposer.swift */,
 				074E16C725373D7C00DA8B41 /* RecipeViewModel.swift */,
-				074E16CF25374E2B00DA8B41 /* UICollectionViewController+Alert.swift */,
-				074E16D32537885A00DA8B41 /* URL+Extension.swift */,
 			);
 			path = RecipeApp;
 			sourceTree = "<group>";
@@ -274,8 +291,26 @@
 			children = (
 				074E16AF2537271300DA8B41 /* RecipeViewCell.swift */,
 				07963F4A253CABAD002E4CD5 /* SearchComponent.swift */,
+				07963F63253D6614002E4CD5 /* Adapter.swift */,
+				07963F74253D7EBB002E4CD5 /* EmptyView.swift */,
+				07963F78253D802C002E4CD5 /* RecipeCell.swift */,
+				07963F8F253D86E6002E4CD5 /* Color.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		07963F67253D6BDA002E4CD5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				074E16CF25374E2B00DA8B41 /* UICollectionViewController+Alert.swift */,
+				074E16D32537885A00DA8B41 /* URL+Extension.swift */,
+				07963F68253D6C69002E4CD5 /* NSLayoutConstraint.swift */,
+				07963F6C253D6DA6002E4CD5 /* UIViewController+Extension.swift */,
+				07963F70253D6DF3002E4CD5 /* UIView+Extensions.swift */,
+				07963F7C253D84B4002E4CD5 /* UIColor+Extensions.swift */,
+				07963F93253D8D2F002E4CD5 /* UICollectionView+Extensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		34FCB03B50E2381DBB107CD3 /* Frameworks */ = {
@@ -567,22 +602,31 @@
 				074E16C425373C6900DA8B41 /* AFHTTPClient.swift in Sources */,
 				07963F4F253CABF9002E4CD5 /* HomeViewController.swift in Sources */,
 				074E16B02537271300DA8B41 /* RecipeViewCell.swift in Sources */,
+				07963F94253D8D2F002E4CD5 /* UICollectionView+Extensions.swift in Sources */,
 				074E16B82537375500DA8B41 /* RemoteRecipeImageLoader.swift in Sources */,
 				07963F47253CAB40002E4CD5 /* RecipeListViewController.swift in Sources */,
+				07963F71253D6DF3002E4CD5 /* UIView+Extensions.swift in Sources */,
 				074E163A2535F1B300DA8B41 /* AppDelegate.swift in Sources */,
+				07963F6D253D6DA6002E4CD5 /* UIViewController+Extension.swift in Sources */,
+				07963F90253D86E6002E4CD5 /* Color.swift in Sources */,
 				074E16D42537885A00DA8B41 /* URL+Extension.swift in Sources */,
 				07963F4B253CABAD002E4CD5 /* SearchComponent.swift in Sources */,
+				07963F79253D802C002E4CD5 /* RecipeCell.swift in Sources */,
 				074E16CC25374D5200DA8B41 /* HelperFunctions.swift in Sources */,
 				074E16BC253737C700DA8B41 /* Constant.swift in Sources */,
 				074E16B4253736F700DA8B41 /* RecipeImageLoader.swift in Sources */,
 				07963F43253CA9BB002E4CD5 /* RecipeFlowController.swift in Sources */,
+				07963F64253D6614002E4CD5 /* Adapter.swift in Sources */,
 				07963F53253D5CF1002E4CD5 /* Debouncer.swift in Sources */,
 				074E16C825373D7C00DA8B41 /* RecipeViewModel.swift in Sources */,
 				074E16D025374E2C00DA8B41 /* UICollectionViewController+Alert.swift in Sources */,
 				074E163C2535F1B300DA8B41 /* SceneDelegate.swift in Sources */,
 				074E16AC253723D100DA8B41 /* RecipeCollectionViewController.swift in Sources */,
+				07963F75253D7EBB002E4CD5 /* EmptyView.swift in Sources */,
 				07963F3D253CA93D002E4CD5 /* AppFlowViewController.swift in Sources */,
 				074E16442535F1B300DA8B41 /* RecipeApp.xcdatamodeld in Sources */,
+				07963F7D253D84B4002E4CD5 /* UIColor+Extensions.swift in Sources */,
+				07963F69253D6C69002E4CD5 /* NSLayoutConstraint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,8 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
 
-        //let endpointURL = URL(safeString: Constant.endpoint)
-        //let recipeCollectionViewController = RecipeUIComposer.composeRecipeCollectionViewControllerWith(loaderURL: endpointURL)
+        let endpointURL = URL(safeString: Constant.endpoint)
+        let recipeCollectionViewController = RecipeUIComposer.composeRecipeCollectionViewControllerWith(loaderURL: endpointURL)
 
         window?.rootViewController = recipeCollectionViewController
         window?.makeKeyAndVisible()
