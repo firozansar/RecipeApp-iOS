@@ -9,7 +9,10 @@ import UIKit
 import RecipeAPI
 
 class HomeViewController: UIViewController {
-
+    
+    typealias Observer = (() -> Void)
+    var onLoadSuccess: Observer?
+    var onLoadFailure: Observer?
     /// When a recipe get select
     var select: ((Recipe) -> Void)?
 
@@ -65,10 +68,17 @@ class HomeViewController: UIViewController {
 
     private func loadData() {
       refreshControl.beginRefreshing()
-//      recipesService.fetchTopRating(completion: { [weak self] recipes in
-//        self?.recipeListViewController.handle(recipes: recipes)
-//        self?.refreshControl.endRefreshing()
-//      })
+        self.recipeLoader.load(completion: strongify(weak: self, closure: { strongSelf, result in
+            switch result {
+            case let .success(recipes):
+                self.recipeListViewController.handle(recipes: recipes)
+                self.refreshControl.endRefreshing()
+                strongSelf.onLoadSuccess?()
+            case .failure:
+                self.refreshControl.endRefreshing()
+                strongSelf.onLoadFailure?()
+            }
+        }))
     }
 
 }
